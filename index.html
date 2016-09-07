@@ -1,52 +1,193 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title></title>
+		<style type="text/css">
+			
+			table
+			{
+				border:5px solid yellow;
+				height: 100%;
+				width: 100%;
+				box-align: start;
+			}
+			div
+			{
+				border:5px solid blue;
+				height: 80%;
+				width: 100%;
+			}
+			
+				.icon{
+					height: 100%;
+					width: 100%;
+				
+					
+					background-image:url(image/icon1.png);
+					background-size: 100% 100%;
+				
+				}
+				.divname
+				{
+				position:relative;
+				}
+				
+		</style>
+		
+		<script type="text/javascript">
+		function showtable(i) {
+		//document.getElementById("test_area").innerHTML = "Hello World"+i;
+		var str="";
+		switch (i)
+		{
+			case 1:
+			document.getElementById("icon_id").style.backgroundImage = "url('image/icon1.png')";
+			document.getElementById("title_id").innerHTML="Education Background";
+			str+="Northeastern University,</br>Boston, MA Dec 2016</br>";
+			str+="M.S Computer Engineering&nbsp&nbsp&nbsp&nbspGPA:3.92/4.0</br></br></br></br></br>";
+			str+="Shanghai Jiao Tong University,</br>Shanghai, China Jun 2014</br>";
+			str+="B.S Electrical Engineering&nbsp&nbsp&nbsp&nbspGPA:3.58/4.0</br>";
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+			break;
+			case 2:
+			document.getElementById("icon_id").style.backgroundImage = "url('image/icon2.png')";
+			document.getElementById("title_id").innerHTML="Project Experience";
+			str+="Parallel Calculation</br>Use different ways to do calculation parallelism, include OpenMP, MPI, Matlab, CUDA(for gpu).</br>";
+			str+="Speed up SAXS(Small Angle X-RayScattering) Intensity calculation.</br>";
+			str+="Apply these on sobel filter, which is used in edge detection.</br>";
+			str+="Combine the parallel Calculation with Image processing in 3D reduection.</br>";
+			
+			
+			str+="Image Mosaicing</br>";
+			str+="Read two images. Apply Harris corner detect to find corner </br>";
+			str+="Use NNC(normalization cross correlation) fin match point.</br>";
+			str+="Use RANSAC(random sample consensus) pick four best points to calculation transfer matrix H. </br>";
+			str+="Warp one of the images and combine them together. </br>";
+			
+			
+			str+="Course registration </br>";
+			str+="Use php, mysql and html to simulate a course registration system.</br>";
+			str+=" Mysql is used for database and html is used for front page.</br>";
+			str+="Connect front page with database using php.</br>";
+			break;
+			case 3:
+			document.getElementById("icon_id").style.backgroundImage = "url('image/icon3.png')";
+			document.getElementById("title_id").innerHTML="Co-op Experience";
+			
+			str+="Vicor Corporation, Andover, MA June 2015-Dec 2015</br>";
+			str+="Engineering intern.</br>";
+			str+="Analyze data and grab key word to make a table.</br>";
+			str+="Design web site and maintained database which included the data of firmware on VI chip. </br>";
+			str+="Program on VI chip. </br>";
+			
+			str+="Vicor Corporation, Andover, MA July 2016-present</br>";
+			str+="Bluetooth device project. Use C# and WPF to make GUI for Bluetooth device project.</br>";
+			str+="Connect dongle and create communication channel between dongle and device.</br>";
+			str+="Check the security of whole project. Testing invalid operation. </br>";
+			
+			break;
+			case 4:
+			document.getElementById("icon_id").style.backgroundImage = "url('image/icon4.png')";
+			document.getElementById("title_id").innerHTML="Current Course";
+			str+="Computer Vision</br>";
+			str+="High-Performance Computing</br>";
+			str+="Database Management System</br>";
+			str+="Introduction to Machine Learning and Pattern Recognition </br>";
+			
+			break;
+			case 5:
+			document.getElementById("icon_id").style.backgroundImage = "url('image/icon5.png')";
+			document.getElementById("title_id").innerHTML="Leadership Activities";
+			str+="Third prize of Electronic Design (5% of all student)</br>";
+			str+="Vice Minister of League Committee of SEIEE</br>";
+			str+="Team Leader of Social Practice</br>";
+			break;
+			case 6:
+			document.getElementById("icon_id").style.backgroundImage = "url('image/icon6.png')";
+			document.getElementById("title_id").innerHTML="Skills";
+			str+="Computer: Java, C++, C#,PHP, JavaScript, Python, Matlab, LabView,CUDA,etc </br>";
+			break;
+			
+		}
+			document.getElementById("content_id").innerHTML=str;
+		}
+		</script>
 
-    <title>Liqin Zhang</title>
-    
-  </head>
+		<link href="css/demos.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1 id="test_area"></h1>
+		
+		<div>
+		<ul>
+			<li class="monolith">
+			<table >
+				<tr height="5%">
+					<td>
+						
+					</td>	
+				</tr>
+				<tr height="15%" >
+				<td width="20%">
+					<div class="icon" name="icon_name" id="icon_id"></div>
+				</td>
+				<td>
+					<div class="divname" >
+						<h2 name="title_name" id="title_id">
+						Education Background
+						</h2>
+					</div>
+				</td>
+				</tr>
+				<tr height="80%" >
+				<td colspan="2">
+					<div >
+						<h3 id="content_id">
+						Northeastern University,</br>Boston, MA Dec 2016</br>
+						M.S Computer Engineering&nbsp&nbsp&nbsp&nbspGPA:3.92/4.0</br></br></br></br></br>
+						Shanghai Jiao Tong University,</br>Shanghai, China Jun 2014</br>
+						B.S Electrical Engineering&nbsp&nbsp&nbsp&nbspGPA:3.58/4.0</br>
+						</h3>
+					</div>
+				</td>
+				</tr>
+			</table>
+			
+			
+			
 
-  <body>
+			</li>
+			<li class="mover" onclick="showtable(1)"><span_1 ></span_1><span>Education</span></li>
+			<li class="mover" onclick="showtable(2)"><span_2></span_2><span>Project</span></li>
+			<li class="mover" onclick="showtable(3)"><span_3></span_3><span>Co-op</span></li>
+			<li class="mover" onclick="showtable(4)"><span_4></span_4><span>Course</span></li>
+			<li class="mover" onclick="showtable(5)"><span_5></span_5><span>Activities</span></li>
+			<li class="mover" onclick="showtable(6)"><span_6></span_6><span>Skills</span></li>
+			
+		</ul>
+		</div>
 
-    <header>
-      <div class="container">
-        <h1>Liqin Zhang</h1>
-        <h2>zhang.liq@husky.neu.edu</h2>
-        <h2>Phone:8572726568</h2>
-        <h2>Address: 10 overlook Ridge Drive #544,Malden,MA,02148</h2>
-        <h2></h2>
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.roundabout2.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('ul').roundabout({
+					minZ: 100,
+					maxZ: 300,
+					minOpacity: 1,
+					minScale: 0.6,
+					childSelector: '.mover',
+					tilt: -4
+				});
+			});
+		</script>
+<div style="text-align:center;clear:both">
 
-        
-      </div>
-    </header>
+</div>
 
-    <div class="container">
-      <section id="main_content">
-        <div id="Education_Background">
-          <h1>Education Background</h1>
-          <h2>Northeastern University,                                                                Boston, MA Dec 2016</h2>
-          <h2>M.S Computer Engineering                                                                                          GPA:3.92/4.0</h2>
-          <h2>Shanghai Jiao Tong University,                                                             Shanghai, China Jun 2014</h2>
-          <h2>B.S Electrical Engineering                                                                                            GPA:3.58/4.0</h2>
-          </div>
-       </section>
-       <section id="Parallel_Calculation">
-         <div id="Parallel_Calculation_Description">
-           <h1>Parallel Calculation</h1></br>
-           <h2>Use different ways to do calculation parallelism, include OpenMP, MPI, Matlab, CUDA(for gpu).</h2></br>
-          <h2>Speed up SAXS(Small Angle X-RayScattering) Intensity calculation.</h2></br>
-          <h2>Apply these on sobel filter, which is used in edge detection.</h2></br>
-          <h2>Combine the parallel Calculation with Image processing in 3D reduection.</h2></br>
-         </div>
-       </section>
-    </div>
 
-    
-  </body>
+	</body>
 </html>

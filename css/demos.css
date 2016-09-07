@@ -1,0 +1,195 @@
+html { padding: 0; margin: 0; height: 100%;
+	width: 100%;}
+body {
+	font-family: Palatino, Georgia, "Times New Roman", serif;
+	padding: 0;
+	margin: 0;
+	
+	height: 100%;
+	width: 100%;
+}
+
+h1 {
+	font-size: 4em;
+	letter-spacing: -1px;
+	margin: 1em 0 0.5em;
+	text-align: center;
+}
+h2 {
+	font-size: 100%;
+	letter-spacing: -1px;
+	margin: 1em 0 0.5em;
+	text-align: center;
+}
+h3 {
+	font-size: 100%;
+	letter-spacing: -1px;
+	margin: 1em 0 0.5em;
+	text-align: center;
+}
+.interact {
+	border-top: 1px solid #ccc;
+	margin-top: 3em;
+	margin-bottom: 4em;
+	padding-top: 1.5em;
+	text-align: center;
+}
+
+.interact a {
+	background-color: #2179b6;
+	border-bottom: 1px solid #084d7d;
+	color: #eee;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Arial, sans-serif;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	text-decoration: none;
+	padding: 8px 14px;
+	margin: 0 1em;
+}
+
+	.interact p {
+		font-style: italic;
+		color: #666;
+	}
+
+.return {
+	font-size: 1.5em;
+	text-align: center;
+}
+	.return a {
+		color: #2179b6;
+		text-decoration: none;
+	}
+	.return a:hover {
+		text-decoration: underline;
+	}
+	
+			ul {
+				list-style: none;
+				padding: 0;
+				text-align: center;
+				margin: 0 auto;
+				border:5px solid red;
+				width: 80%;
+				height: 100%;
+			}
+			li {
+				height: 120px;
+				width: 120px;
+				background-color:transparent;
+				text-align: center;
+				cursor: pointer;
+				border: 0px solid blue;
+				-webkit-border-radius: 10%;
+				-moz-border-radius: 10%;
+				-ms-border-radius: 10%;
+				-o-border-radius: 10%;
+				border-radius: 10%;
+			}
+				li.roundabout-in-focus {
+					cursor: default;
+				}
+			li span {
+				display: block;
+				padding-top: 10%;
+				height: 80%;
+				width: 80%
+				border:5px solid green;
+				background-color:transparent;
+				<!--
+				background-image: url(../image/pokemonball1.jpg);
+				background-size:100% 100%;
+				-->
+			}
+			li span_1
+			{
+				display: block;
+				padding-top: 10%;
+				height: 80%;
+				width: 96%;
+				background-image: url(../image/pokemonball1.png);
+				background-size:100% 100%;
+				background-color:transparent;
+				
+			}
+			li span_2
+			{
+				display: block;
+				padding-top: 10%;
+				height: 80%;
+				width: 80%;
+				background-image: url(../image/pokemonball2.png);
+				background-size:100% 100%;
+				background-color:transparent;
+			}
+			li span_3
+			{
+				display: block;
+				padding-top: 10%;
+				height: 80%;
+				width: 80%;
+				background-image: url(../image/pokemonball3.png);
+				background-size:100% 100%;
+				background-color:transparent;
+			}
+			li span_4
+			{
+				display: block;
+				padding-top: 10%;
+				height: 80%;
+				width: 80%;
+				
+				background-image: url(../image/pokemonball4.png);
+				background-size:100% 100%;
+				background-color:transparent;
+			}
+			li span_5
+			{
+				display: block;
+				padding-top: 10%;
+				height: 80%;
+				width: 80%;
+				
+				background-image: url(../image/pokemonball5.png);
+				background-size:100% 100%;
+				background-color:transparent;
+			}
+			li span_6
+			{
+				display: block;
+				padding-top: 10%;
+				height: 80%;
+				width: 80%;
+				
+				background-image: url(../image/pokemonball6.png);
+				background-size:100% 100%;
+				background-color:transparent;
+				text-align: center;
+			}
+				.monolith {
+					background-color: white;
+					
+					text-align: center;
+					width: 40%;
+					height: 80%;
+					
+					position: relative;
+					z-index: 260;
+					left: 30%;
+					border-color: #222;
+					opacity: 0.8;
+				}
+				
+			#carbonads-container {
+				clear: both;
+				margin-top: 1em;
+			}
+			#carbonads-container .carbonad {
+				margin: 0 auto;
+			}
+			
+			
+			

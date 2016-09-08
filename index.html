@@ -15,7 +15,7 @@
 			}
 			div
 			{
-				border:5px solid blue;
+				border:0px solid blue;
 				height: 80%;
 				width: 100%;
 			}
@@ -43,15 +43,21 @@
 		switch (i)
 		{
 			case 1:
+			document.getElementById("li_id").style.backgroundImage = "url('image/card1.png')";
+			
+			/*
 			document.getElementById("icon_id").style.backgroundImage = "url('image/icon1.png')";
 			document.getElementById("title_id").innerHTML="Education Background";
 			str+="Northeastern University,</br>Boston, MA Dec 2016</br>";
 			str+="M.S Computer Engineering&nbsp&nbsp&nbsp&nbspGPA:3.92/4.0</br></br></br></br></br>";
 			str+="Shanghai Jiao Tong University,</br>Shanghai, China Jun 2014</br>";
 			str+="B.S Electrical Engineering&nbsp&nbsp&nbsp&nbspGPA:3.58/4.0</br>";
-
+			*/
 			break;
 			case 2:
+			document.getElementById("li_id").style.backgroundImage = "url('image/card2.png')";
+			
+			/*
 			document.getElementById("icon_id").style.backgroundImage = "url('image/icon2.png')";
 			document.getElementById("title_id").innerHTML="Project Experience";
 			str+="Parallel Calculation</br>Use different ways to do calculation parallelism, include OpenMP, MPI, Matlab, CUDA(for gpu).</br>";
@@ -71,8 +77,12 @@
 			str+="Use php, mysql and html to simulate a course registration system.</br>";
 			str+=" Mysql is used for database and html is used for front page.</br>";
 			str+="Connect front page with database using php.</br>";
+			*/
 			break;
 			case 3:
+			document.getElementById("li_id").style.backgroundImage = "url('image/card3.png')";
+			
+			/*
 			document.getElementById("icon_id").style.backgroundImage = "url('image/icon3.png')";
 			document.getElementById("title_id").innerHTML="Co-op Experience";
 			
@@ -86,28 +96,39 @@
 			str+="Bluetooth device project. Use C# and WPF to make GUI for Bluetooth device project.</br>";
 			str+="Connect dongle and create communication channel between dongle and device.</br>";
 			str+="Check the security of whole project. Testing invalid operation. </br>";
-			
+			*/
 			break;
 			case 4:
+			document.getElementById("li_id").style.backgroundImage = "url('image/card4.png')";
+			
+			/*
 			document.getElementById("icon_id").style.backgroundImage = "url('image/icon4.png')";
 			document.getElementById("title_id").innerHTML="Current Course";
 			str+="Computer Vision</br>";
 			str+="High-Performance Computing</br>";
 			str+="Database Management System</br>";
 			str+="Introduction to Machine Learning and Pattern Recognition </br>";
-			
+			*/
 			break;
 			case 5:
+			document.getElementById("li_id").style.backgroundImage = "url('image/card5.png')";
+			
+			/*
 			document.getElementById("icon_id").style.backgroundImage = "url('image/icon5.png')";
 			document.getElementById("title_id").innerHTML="Leadership Activities";
 			str+="Third prize of Electronic Design (5% of all student)</br>";
 			str+="Vice Minister of League Committee of SEIEE</br>";
 			str+="Team Leader of Social Practice</br>";
+			*/
 			break;
 			case 6:
+			document.getElementById("li_id").style.backgroundImage = "url('image/card6.png')";
+			
+			/*
 			document.getElementById("icon_id").style.backgroundImage = "url('image/icon6.png')";
 			document.getElementById("title_id").innerHTML="Skills";
 			str+="Computer: Java, C++, C#,PHP, JavaScript, Python, Matlab, LabView,CUDA,etc </br>";
+			*/
 			break;
 			
 		}
@@ -122,7 +143,8 @@
 		
 		<div>
 		<ul>
-			<li class="monolith">
+			<li class="monolith" id="li_id">
+			<!--
 			<table >
 				<tr height="5%">
 					<td>
@@ -155,6 +177,7 @@
 				</tr>
 			</table>
 			
+			-->
 			
 			
 

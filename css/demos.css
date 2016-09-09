@@ -97,13 +97,10 @@ h3 {
 				display: block;
 				padding-top: 10%;
 				height: 80%;
-				width: 80%
+				width: 80%;
 				border:0px solid green;
 				background-color:transparent;
-				<!--
-				background-image: url(../image/pokemonball1.jpg);
-				background-size:100% 100%;
-				-->
+				color: white;
 			}
 			li span_1
 			{

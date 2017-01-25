@@ -64,26 +64,26 @@
 		
 		//Scatter chart
 		var data_3 = google.visualization.arrayToDataTable([
-          ['Game','Damage', 'Fight','win/lose','size'],
-          ['Lose', 36.4,      64.7,         0,      2],
-          ['Win ', 22.4,      51.3,       100,      2],
-          ['Win ', 25.4,      62.7,       100,      2],
-          ['Win ', 21.5,      68.4,       100,      2],
-          ['Lose', 25.2,      58.6,         0,      2],
-          ['Win ', 28.4,      54.9,       100,      2],
-		  ['Lose', 23.2,      36.4,         0,      2],
-		  ['Win ', 20.5,      41.7,       100,      2],
-		  ['Win ', 33.7,      56.3,       100,      2],
-		  ['Win ', 27.2,      45.5,       100,      2],
-		  ['Win ', 18.2,      29.7,       100,      2],
-		  ['Lose', 33.7,      46.5,         0,      2]
+          ['Game','Damage density', 'KDA','win/lose','size'],
+          ['Lose', 56.26,            3.67,         0,      2],
+          ['Win ', 43.66,            10.0,       100,      2],
+          ['Win ', 40.51,            3.56,       100,      2],
+          ['Win ', 31.43,            6.50,       100,      2],
+          ['Lose', 43.00,            2.42,         0,      2],
+          ['Win ', 51.73,            2.15,       100,      2],
+		  ['Lose', 63.74,            0.50,         0,      2],
+		  ['Win ', 49.16,            2.50,       100,      2],
+		  ['Win ', 59.86,            4.50,       100,      2],
+		  ['Win ', 59.78,            3.75,       100,      2],
+		  ['Win ', 61.28,            5.50,       100,      2],
+		  ['Lose', 72.47,            2.00,         0,      2]
         ]);
 
         var options_3 = {
-          title: 'Comtribution',
+          title: 'Contribution',
 		  colorAxis: {colors: ['red', 'green']},
-          hAxis: {title: 'Damage', minValue: 0, maxValue: 100},
-          vAxis: {title: 'Fight', minValue: 0, maxValue: 100},
+          hAxis: {title: 'Damage density', minValue: 0, maxValue: 100},
+          vAxis: {title: 'KDA', minValue: 0, maxValue: 10},
           bubble: {textStyle: {fontSize: 5}}
         };
 
@@ -96,9 +96,50 @@
   </head>
 
   <body>
+	<div id="main_div" style="text-align:center" >
     <!--Div that will hold the pie chart-->
     <div id="chart_div" align="center"></div>
-	<div id="curve_chart" style="width: 900px; height: 500px" align="center"></div>
-	<div id="scatter_chart" style="width: 900px; height: 500px;" align="center"></div>
+	<div id="chart_div_analysis" style="text-align:left;"  >
+		<a style="font-family: Times;">In this part, I use pie chart to show how many wins or loses among all 12 game. </br>
+			Pie chart comparing with other chart such as combo charts or scatter charts is more intuitive</br>
+			the audience can quickly tell the rate of wins.</br>
+			Task: show the rate of wins and loses.</br>
+			Demension: 2D how many wins and how many loses.</br>
+			Data type: Size, color, shap.</br>
+			Data style: pie charts.</br>
+			Information: shows in all 12 games I winned 69.2%.</br>
+			Good or bad: I think pie charts is good for showing percentage of data.</br>
+			Although, it has limits on accuracy, but for this case. </br>
+			I just need a rough idea on how many wins I got. So I think it is fine.</br>
+			Suggestion: 12 games maybe not enough for estimation.</br>
+			
+		</a>
+	</div>
+	<div id="curve_chart" style="text-align:center" ></div>
+	<div id="curve_chart_analysis" align="left" >
+		<a style="font-family: Times;">
+			In this case I put KDA together, because these three factors are the keys to evalue the perform of a player in this game. </br>
+			Task: show the KDA of each game.</br>
+			Demension: 2D number of Kills, deaths and assists.</br>
+			Data type: Size, color, value.</br>
+			Data style: Combo charts.</br>
+			Information: shows the number of KDA in each game, it can tell that each win game I the amount of kill is higher than death. But for lose, I often still get a high kills. I think it maybe my team is not palyed well. :)</br>
+			Good or bad: I think combo charts is good for showing amount of data. but it is hard to find relationship between KDA and result of game. </br>
+			Suggestion:  Since KDA are relative to each other. I can use a formula to put them together such as (K+A)/(D+1). make these three value to be one. I think it will be helpful</br>
+		</a>
+		</div>
+	<div id="scatter_chart" style="width: 900px; height: 500px;text-align:center"></div>
+	</div>
+	<div id="scatter_chart_analysis" align="left" >
+		<a style="font-family: Times;">
+			In this case I create two new elements. the first one is KDA which is (kill+assists)/(death+1). This factor shows how well I played in this game. it can indicate my personal performance. Second one, I call it damage density. It means in each fight how many damage comes from me. the formula is damage percantage divided by participation rate of fight. this factor means how important my role is in this game.</br>
+			Task: show KDA and damage density, to see the key to success.</br>
+			Demension: 2D KDA and damage density.</br>
+			Data type: Size, color, value, postion.</br>
+			Data style: Scatter charts.</br>
+			Information: shows the relationship between my perform and win. however, we can tell those games where my KDA is higher than 4.5, we winned, and those games where my KDA is lower than 2, we lost. these game I lost often had a high damage density. which means I palyed well but still lost the fight. :) there seems to be a region between y=x-25 and y=x-50. up this region I winned and down this region I lost</br>
+			Good or bad: there are many roles in this game. for example "carry", "solo" or "third gay". although, I may not fight a lot. do not mean that I am not important to the team. but it is hard to tell from this chart.  </br>
+			Suggestion: Collect more data to see if the region is true</br>
+		</a>
   </body>
   </html>

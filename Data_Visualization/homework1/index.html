@@ -66,25 +66,35 @@
 		//Scatter chart
 		var data_3 = google.visualization.arrayToDataTable([
           ['Game','Damage density', 'KDA','win/lose','size'],
-          ['Lose', 56.26,            3.67,         0,      1],
-          ['Win ', 43.66,            10.0,       100,      1],
-          ['Win ', 40.51,            3.56,       100,      1],
-          ['Win ', 31.43,            6.50,       100,      1],
-          ['Lose', 43.00,            2.42,         0,      1],
-          ['Win ', 51.73,            2.15,       100,      1],
-		  ['Lose', 63.74,            0.50,         0,      1],
-		  ['Win ', 49.16,            2.50,       100,      1],
-		  ['Win ', 59.86,            4.50,       100,      1],
-		  ['Win ', 59.78,            3.75,       100,      1],
-		  ['Win ', 61.28,            5.50,       100,      1],
-		  ['Lose', 72.47,            2.00,         0,      1]
+          ['Lose', 56.26,            3.67,         0,      3],
+          ['Win ', 43.66,            10.0,       100,      3],
+          ['Win ', 40.51,            3.56,       100,      3],
+          ['Win ', 31.43,            6.50,       100,      3],
+          ['Lose', 43.00,            2.42,         0,      3],
+          ['Win ', 51.73,            2.15,       100,      3],
+		  ['Lose', 63.74,            0.50,         0,      3],
+		  ['Win ', 49.16,            2.50,       100,      3],
+		  ['Win ', 59.86,            4.50,       100,      3],
+		  ['Win ', 59.78,            3.75,       100,      3],
+		  ['Win ', 61.28,            5.50,       100,      3],
+		  ['Lose', 72.47,            2.00,         0,      3],
+		  ['Win', 1000,            100.00,      100,      2],
+		  ['Win', 2000,            200.00,      100,      12]
         ]);
 
         var options_3 = {
           title: 'Contribution',
 		  colorAxis: {colors: ['red', 'green']},
-          hAxis: {title: 'Damage density', minValue: 0, maxValue: 100},
-          vAxis: {title: 'KDA', minValue: 0, maxValue: 10},
+          hAxis: {title: 'Damage density', viewWindowMode:'explicit',
+              viewWindow:{
+                max:100,
+                min:0
+				}},
+          vAxis: {title: 'KDA', viewWindowMode:'explicit',
+              viewWindow:{
+                max:10,
+                min:0
+				}},
           bubble: {textStyle: {fontSize: 5}}
         };
 

@@ -17,7 +17,7 @@ body {
 	margin: 3% auto;
 }
 .container {
-    background: url("bg1.png") no-repeat scroll center top transparent;
+    background: url("image/bg1.png") no-repeat scroll center top transparent;
     height: 882px;
     margin: 0px auto;
     border: 0px solid #333;

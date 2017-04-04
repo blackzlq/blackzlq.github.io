@@ -18,10 +18,9 @@ body {
 }
 .container {
     background: url("bg1.png") no-repeat scroll center top transparent;
-    color: #000000;
-    height: 535px;
-    margin: 20px auto;
-    border: 10px solid #333;
+    height: 882px;
+    margin: 0px auto;
+    border: 0px solid #333;
     overflow: hidden;
     position: relative;
     width: 1000px;

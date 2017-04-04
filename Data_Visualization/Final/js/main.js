@@ -20,7 +20,7 @@ jQuery(function(){
 
     // display description on click by labels
     $('.labels a').click(function() {
-        $('.description p').html( $(this).find('p').html() ).parent().fadeIn(500);
+        $('.description div').html( $(this).find('div').html() ).parent().fadeIn(500);
         return false;
     });
 

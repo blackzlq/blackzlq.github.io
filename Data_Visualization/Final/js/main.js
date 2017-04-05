@@ -17,15 +17,29 @@ jQuery(function(){
         $(this).parent().fadeOut(500);
         return false;
     });
-
     // display description on click by labels
     $('.labels a').click(function() {
-        $('.description div').html( $(this).find('div').html() ).parent().fadeIn(500);
+		var id="#"+ $(this).find('p').html();
+        $('.description').fadeIn(500);
+		$(id).show("slow");
+		
+		
         return false;
     });
 
     // close dialog on click outside
     $('.close').click(function() {
+		var name_list=["#label_1","#label_2","#label_3","#label_4","#label_5"];
+		var i;
+		for(i=0;i<name_list.length;i++)
+		{
+			$(name_list[i]).css({'display':'none'}); ;
+		}
         $('.description').fadeOut(500);
     });
 	});
+	
+	
+	
+	
+	

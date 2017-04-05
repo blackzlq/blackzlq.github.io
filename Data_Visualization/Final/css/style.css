@@ -35,13 +35,13 @@ body {
     color: #FFFFFF;
     display: none;
     height: 300px;
-    left: 150px;
+    left: 25px;
     line-height: 24px;
     padding: 100px 30px;
     position: absolute;
     text-align: center;
     top: 25px;
-    width: 600px;
+    width: 900px;
     z-index: 10;
 
     -moz-border-radius: 170px;

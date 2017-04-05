@@ -17,7 +17,7 @@
 <body>
 
 	
-	
+		
 <div class="container">
 	<div class="labels">
 		<a id="label1" class="label" href="#">Summary
@@ -38,6 +38,14 @@
 		
 		<a id="label5" class="label" href="#">Race3
 			<p>label_5</p>
+		</a>
+		
+		<a id="label6" class="label" href="#">Age
+			<p>label_6</p>
+		</a>
+		
+		<a id="label7" class="label" href="#">Education
+			<p>label_7</p>
 		</a>
 	</div>
 	<div class="description" >
@@ -77,11 +85,37 @@
 			<svg id="race3_fillgauge5" width="100" height="500" ></svg>
 			<svg id="race3_fillgauge6" width="100" height="500" ></svg>
 		</div>
+		
+		<div id="label_6" style="display: none;">
+			<div id="skills">
+				<div id="skillmap">
+					<div class="skills-wrapper">
+						<div class="skills-sunburst">
+						</div>
+						<div class="skills-chart">
+							<div id="skills-chart-breadcrumb">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="label_7" style="display: none;">
+			<div id='dashboard'>
+			</div>
+		</div>
 		<p></p>
 		<a class="close">X</a>
 	</div>
 </div>
-
+<script type="text/javascript" src="js/education.js"></script>
+<script type="text/javascript" src="js/skillsdata.js"></script>
+<script type="text/javascript" src="js/skill.js"></script>
+<script type="text/javascript">
+d3.select(self.frameElement).style("height", "700px");
+</script>
 <script type="text/javascript" src="js/race.js" ></script>
 </body>
 </html>

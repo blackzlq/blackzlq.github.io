@@ -195,15 +195,15 @@ function dashboard(id, fData){
         leg= legend(tF);  // create the legend.
     }
     var freqData=[
-    {State:'Married M',freq:{LessThanHighSchool:2.73, HighSchoolDegree:7.16, CollegeDegree:4.11,BechelorDegreeOrHigher:4.98}}
-    ,{State:'Married W',freq:{LessThanHighSchool:2.32, HighSchoolDegree:7.27, CollegeDegree:5.23,BechelorDegreeOrHigher:5.59}}
-    ,{State:'KeepMarr M',freq:{LessThanHighSchool:1.46, HighSchoolDegree:4.25, CollegeDegree:2.53,BechelorDegreeOrHigher:4.25}}
-    ,{State:'KeepMarr W',freq:{LessThanHighSchool:0.90, HighSchoolDegree:3.79, CollegeDegree:2.77,BechelorDegreeOrHigher:3.93}}
+    {State:'Men',freq:{LessThanHighSchool:2.73, HighSchoolDegree:7.16, CollegeDegree:4.11,BechelorDegreeOrHigher:4.98}}
+    ,{State:'Women',freq:{LessThanHighSchool:2.32, HighSchoolDegree:7.27, CollegeDegree:5.23,BechelorDegreeOrHigher:5.59}}
+    ,{State:'Men',freq:{LessThanHighSchool:1.46, HighSchoolDegree:4.25, CollegeDegree:2.53,BechelorDegreeOrHigher:4.25}}
+    ,{State:'Women',freq:{LessThanHighSchool:0.90, HighSchoolDegree:3.79, CollegeDegree:2.77,BechelorDegreeOrHigher:3.93}}
 
-    ,{State:'Divoced M',freq:{LessThanHighSchool:1.57, HighSchoolDegree:3.50, CollegeDegree:1.92,BechelorDegreeOrHigher:1.18}}
-    ,{State:'Divoced W',freq:{LessThanHighSchool:1.41, HighSchoolDegree:3.85, CollegeDegree:2.61,BechelorDegreeOrHigher:1.99}}
-    ,{State:'KeepDivo M',freq:{LessThanHighSchool:1.54, HighSchoolDegree:4.18, CollegeDegree:2.64,BechelorDegreeOrHigher:2.88}}
-    ,{State:'KeepDivo W',freq:{LessThanHighSchool:0.98, HighSchoolDegree:2.46, CollegeDegree:2.09,BechelorDegreeOrHigher:2.19}}
+    ,{State:'Men',freq:{LessThanHighSchool:1.57, HighSchoolDegree:3.50, CollegeDegree:1.92,BechelorDegreeOrHigher:1.18}}
+    ,{State:'Women',freq:{LessThanHighSchool:1.41, HighSchoolDegree:3.85, CollegeDegree:2.61,BechelorDegreeOrHigher:1.99}}
+    ,{State:'Men',freq:{LessThanHighSchool:1.54, HighSchoolDegree:4.18, CollegeDegree:2.64,BechelorDegreeOrHigher:2.88}}
+    ,{State:'Women',freq:{LessThanHighSchool:0.98, HighSchoolDegree:2.46, CollegeDegree:2.09,BechelorDegreeOrHigher:2.19}}
     
     ];
     

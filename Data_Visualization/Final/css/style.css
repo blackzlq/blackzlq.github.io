@@ -18,12 +18,12 @@ body {
 }
 .container {
     background: url("../image/bg.png") no-repeat scroll center top transparent;
-    height: 720px;
+    height: 600px;
     margin: 0px auto;
     border: 0px solid #333;
     overflow: hidden;
     position: relative;
-    width: 1200px;
+    width: 1000px;
     position:relative;       
     -webkit-box-shadow:0 2px 8px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 2px 8px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
@@ -143,4 +143,45 @@ body {
     left: 275px;
     top: 30px;
 }
-#foot_bm a,#foot_bm p,#foot_bm p a{font-size:12px;color:#666;}
+#label7 {
+    left: 850px;
+    top: 100px;
+}
+#skillmap .skills-wrapper {
+    margin-top: 10px;
+    overflow: auto;
+}
+#skillmap .skills-sunburst {
+    float: left;
+    width: 500px;
+    margin-left: -80px;
+}
+#skillmap .skills-sunburst svg {
+    font: 11px 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+}
+#skillmap .skills-chart {
+    float: right;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    margin: 80px 20px 0 0;
+}
+#skillmap .skills-chart .breadcumb-text {
+    font-size: 13px;
+    font-weight: 700;
+}
+#skillmap .skills-chart #skills-chart-line {
+    fill: none;
+    stroke-width: 3.5px;
+}
+#skillmap .skills-chart .axis path,
+#skillmap .skills-chart .axis line {
+    fill: none;
+}
+#skillmap .skills-chart .x-axis path,
+#skillmap .skills-chart .y-axis path {
+    stroke: #444;
+    stroke-width: 1px;
+    shape-rendering: geometricPrecision;
+}

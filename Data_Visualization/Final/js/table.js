@@ -21,7 +21,11 @@
 		
 		
 		var x = document.getElementById("myRange").value;
+		var age_x=parseInt(x, 10);
+		if(age_x>15)age_x=age_x+(age_x-15);
+		
 		document.getElementById("slider_var").textContent=years[x];
+		document.getElementById("AgeRangeOfChart").textContent=String(14+age_x)+" years old - "+String(22+age_x)+" years old";
         // Create the data table.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');

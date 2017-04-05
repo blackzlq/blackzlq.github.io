@@ -5,7 +5,9 @@ jQuery(function(){
             $('.labels a#label3').fadeIn(100).effect('bounce', { times:3 }, 300, function() {
                 $('.labels a#label4').fadeIn(100).effect('bounce', { times:3 }, 300, function() {
                     $('.labels a#label5').fadeIn(100).effect('bounce', { times:3 }, 300, function() {
-                        $('.labels a#label6').fadeIn(100).effect('bounce', { times:3 }, 300);
+                        $('.labels a#label6').fadeIn(100).effect('bounce', { times:3 }, 300, function() {
+                        	$('.labels a#label7').fadeIn(100).effect('bounce', { times:3 }, 300);
+                    	});
                     });
                 });
             });
@@ -29,7 +31,7 @@ jQuery(function(){
 
     // close dialog on click outside
     $('.close').click(function() {
-		var name_list=["#label_1","#label_2","#label_3","#label_4","#label_5"];
+		var name_list=["#label_1","#label_2","#label_3","#label_4","#label_5","#label_6","#label_7"];
 		var i;
 		for(i=0;i<name_list.length;i++)
 		{

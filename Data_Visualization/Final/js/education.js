@@ -195,15 +195,15 @@ function dashboard(id, fData){
         leg= legend(tF);  // create the legend.
     }
     var freqData=[
-    {State:'Men1',freq:{LessThanHighSchool:2.73, HighSchoolDegree:7.16, CollegeDegree:4.11,BechelorDegreeOrHigher:4.98}}
-    ,{State:'Women1',freq:{LessThanHighSchool:2.32, HighSchoolDegree:7.27, CollegeDegree:5.23,BechelorDegreeOrHigher:5.59}}
-    ,{State:'Men2',freq:{LessThanHighSchool:1.46, HighSchoolDegree:4.25, CollegeDegree:2.53,BechelorDegreeOrHigher:4.25}}
-    ,{State:'Women2',freq:{LessThanHighSchool:0.90, HighSchoolDegree:3.79, CollegeDegree:2.77,BechelorDegreeOrHigher:3.93}}
+    {State:'Men1',freq:{LessThanHighSchool:537, HighSchoolDegree:1405, CollegeDegree:823,BechelorDegreeOrHigher:978}}
+    ,{State:'Women1',freq:{LessThanHighSchool:411, HighSchoolDegree:1258, CollegeDegree:934,BechelorDegreeOrHigher:1007}}
+    ,{State:'Men2',freq:{LessThanHighSchool:222, HighSchoolDegree:702, CollegeDegree:427,BechelorDegreeOrHigher:734}}
+    ,{State:'Women2',freq:{LessThanHighSchool:411, HighSchoolDegree:592, CollegeDegree:442,BechelorDegreeOrHigher:637}}
 
-    ,{State:'Men3',freq:{LessThanHighSchool:1.57, HighSchoolDegree:3.50, CollegeDegree:1.92,BechelorDegreeOrHigher:1.18}}
-    ,{State:'Women3',freq:{LessThanHighSchool:1.41, HighSchoolDegree:3.85, CollegeDegree:2.61,BechelorDegreeOrHigher:1.99}}
-    ,{State:'Men4',freq:{LessThanHighSchool:1.54, HighSchoolDegree:4.18, CollegeDegree:2.64,BechelorDegreeOrHigher:2.88}}
-    ,{State:'Women4',freq:{LessThanHighSchool:0.98, HighSchoolDegree:2.46, CollegeDegree:2.09,BechelorDegreeOrHigher:2.19}}
+    ,{State:'Men3',freq:{LessThanHighSchool:98, HighSchoolDegree:289, CollegeDegree:168,BechelorDegreeOrHigher:153}}
+    ,{State:'Women3',freq:{LessThanHighSchool:71, HighSchoolDegree:263, CollegeDegree:197,BechelorDegreeOrHigher:203}}
+    ,{State:'Men4',freq:{LessThanHighSchool:42, HighSchoolDegree:142, CollegeDegree:91,BechelorDegreeOrHigher:77}}
+    ,{State:'Women4',freq:{LessThanHighSchool:25, HighSchoolDegree:80, CollegeDegree:70,BechelorDegreeOrHigher:71}}
     
     ];
     

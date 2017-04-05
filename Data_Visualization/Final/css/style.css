@@ -120,32 +120,32 @@ body {
     border-top: 15px solid rgba(128, 128, 128, 0.8);
 }
 #label1 {
-    left: 800px;
-    top: 350px;
+    left: 590px;
+    top: 165px;
 }
 #label2 {
-    left: 350px;
-    top: 210px;
+    left: 271px;
+    top: 156px;
 }
 #label3 {
-    left: 450px;
-    top: 400px;
+    left: 286px;
+    top: 16px;
 }
 #label4 {
-    left: 170px;
-    top: 335px;
+    left: 160px;
+    top: 51px;
 }
 #label5 {
-    left: 570px;
-    top: 160px;
+    left: 118px;
+    top: 175px;
 }
 #label6 {
-    left: 275px;
-    top: 30px;
+    left: 876px;
+    top: 145px;
 }
 #label7 {
-    left: 850px;
-    top: 100px;
+    left: 600px;
+    top: 456px;
 }
 #skillmap .skills-wrapper {
     margin-top: 10px;

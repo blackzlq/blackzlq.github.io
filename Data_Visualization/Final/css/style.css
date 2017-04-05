@@ -17,13 +17,13 @@ body {
 	margin: 3% auto;
 }
 .container {
-    background: url("../image/bg1.png") no-repeat scroll center top transparent;
-    height: 882px;
+    background: url("../image/bg.png") no-repeat scroll center top transparent;
+    height: 720px;
     margin: 0px auto;
     border: 0px solid #333;
     overflow: hidden;
     position: relative;
-    width: 1000px;
+    width: 1200px;
     position:relative;       
     -webkit-box-shadow:0 2px 8px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 2px 8px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
